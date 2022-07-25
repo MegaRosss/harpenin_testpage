@@ -104,6 +104,7 @@ select {
   .logo{
     width: 100px;
     min-width: 80px;
+    
   }
   i{
     color: black;
@@ -136,7 +137,7 @@ select {
   #hero{
     background-image: 
     url(./img/hero5.png),
-   linear-gradient(to left bottom, #ffffff, #f1f1f1, #e4e4e4, #d6d6d6, #c9c9c9);
+   linear-gradient(to left bottom, #ffffff, #f1f1f1, #e4e4e4, #d6d6d6, #e2e1e1);
     ;
     background-color: var(--accent_color);
     height:92.1vh;
