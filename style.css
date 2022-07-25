@@ -1,0 +1,330 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: var(--ff-primary);
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+/*resetting the font weight*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+/* make images easier to work with */
+img,
+picutre {
+  max-width: 100%;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  /* colours */
+  --primary_color: #cd2122;
+  --accent_color: white;
+  --grey_color: rgb(231, 231, 231);
+  --dark_color: rgb(50, 50, 50);
+  /* fonts */
+  /*fs  */
+  --fs-xs: 16px;
+  --fs-s: 18px;
+  --fs-m: 20px;
+  --fs-l: 25px;
+  --fs-xl: 33px;
+  --fs-xxl: 45px;
+  --fs-xxxl: 60px;
+  /* ff  */
+  --ff-accent: "Montaga" ;
+  --ff-primary: "Lato" ;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 12px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section {
+  width: 100%;
+}
+
+.logo {
+  width: 100px;
+  min-width: 80px;
+}
+
+i {
+  color: black;
+}
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--accent_color);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-inline: 20px;
+}
+
+#header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#header .navbar a {
+  color: black;
+  padding-inline: 20px;
+  font-size: var(--fs-m);
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  text-transform: capitalize;
+}
+
+#header .navbar a:hover {
+  color: var(--primary_color);
+}
+
+#hero {
+  background-image: url(./img/hero5.png), -webkit-gradient(linear, right top, left bottom, from(#ffffff), color-stop(#f1f1f1), color-stop(#e4e4e4), color-stop(#d6d6d6), to(#c9c9c9));
+  background-image: url(./img/hero5.png), linear-gradient(to left bottom, #ffffff, #f1f1f1, #e4e4e4, #d6d6d6, #c9c9c9);
+  background-color: var(--accent_color);
+  height: 92.1vh;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top 25% right 0;
+  padding-inline: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#hero .textbx {
+  width: 70ch;
+}
+
+#hero .textbx h1 {
+  font-size: var(--fs-xxxl);
+}
+
+#hero .textbx h1 span {
+  color: var(--primary_color);
+}
+
+#hero .textbx h4 {
+  font-size: var(--fs-l);
+}
+
+#hero .textbx p {
+  padding-bottom: 15px;
+  color: grey;
+}
+
+#hero .textbx button {
+  background-image: url(./img/button.png);
+  background-color: transparent;
+  border: none;
+  color: var(--primary_color);
+  padding: 14px 80px;
+  cursor: pointer;
+}
+
+#products1 {
+  text-align: center;
+  padding: 2rem;
+  background-image: url(./img/cool-background.png);
+}
+
+#products1 .textbx h2 {
+  font-size: var(--fs-xxxl);
+}
+
+#products1 .probx {
+  margin-block: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+#products1 .pro {
+  width: 23%;
+  min-width: 250px;
+  padding: 20px 12px;
+  margin-block: 15px;
+  cursor: pointer;
+  -webkit-box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+          box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  border: 1px solid #b7b5b5;
+  border-radius: 1rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#products1 .pro:hover {
+  -webkit-box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+          box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#products1 .pro .des {
+  text-align: start;
+}
+
+#products1 .pro .des h5 {
+  color: gray;
+  margin-bottom: 12px;
+}
+
+#products1 .pro .des h4 {
+  color: black;
+  font-weight: 500;
+  margin-block: 12px;
+}
+
+#products1 .pro .des a {
+  padding: 10px 12px;
+  background-color: var(--primary_color);
+  color: white;
+  border-radius: .5rem;
+}
+
+#products1 .pro img {
+  border-radius: 1rem;
+  padding-block: 12px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: var(--primary_color);
+  padding: 20px 100px;
+}
+
+footer .sitelinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 1em;
+}
+
+footer .sitelinks a {
+  color: white;
+}
+
+footer .socialbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 1em;
+}
+/*# sourceMappingURL=style.css.map */
